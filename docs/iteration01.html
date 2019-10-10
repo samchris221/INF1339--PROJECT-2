@@ -1,5 +1,6 @@
 <html>
 <head>
+     <style>.output {color: chartreuse;}</style>
     <!--LOAD p5.js library so we can use a few of its tools-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script>
@@ -9,10 +10,11 @@
         
         //SETUP is a standard way P5 starts a script. 
         function setup() {
+           
             //P5 usually used for drawing
             noCanvas()
             //SEND the URL and when the data comes back, run the function "gotData"
-            load JSON(url,gotData);
+            loadJSON(url,gotData);
         }
         
         //gotData for now just announces itself
